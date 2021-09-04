@@ -23,11 +23,11 @@
 }
 
 .logo_place_header {
-  margin-top: 30px;
-  margin-left: 64px;
   width: 183px;
   background-image: url(../images/logo_place_header.svg);
   position: absolute;
+  top:30px;
+  left:64px;
   z-index: 1;
 }
 
@@ -39,7 +39,7 @@
   align-items: center;
   line-height: 96px;
   font-size: 102px;
-  font-weight: bolder;
+  font-weight: bold;
   position: relative;
   z-index: 1;
 }
@@ -122,7 +122,7 @@
 .description__two-columns_span-accent {
   line-height: 34px;
   font-size: 24px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .digits__section_title {
@@ -131,7 +131,7 @@
   text-align: center;
   line-height: 1.15;
   font-size: 60px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .digits__section_subtitle {
@@ -147,7 +147,7 @@
 
 .table {
   margin: 0 auto 100px;
-  width: 75%;
+  width: 1100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -162,11 +162,11 @@
   text-align: center;
   line-height: 1.15;
   font-size: 24px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .table__cell_text {
-  margin: 20px 0 60px;
+  margin: 20px 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -193,7 +193,7 @@
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
-  font-weight: bolder;
+  font-weight: bold;
   position: relative;
   top: 100px;
   z-index: 1;
@@ -234,7 +234,7 @@
   margin: 90px auto 20px;
   line-height: 1.15;
   font-size: 60px;
-  font-weight: bolder;
+  font-weight: bold;
   text-align: center;
   position: relative;
 }
@@ -251,7 +251,7 @@
 }
 
 .table__theme_dark {
-  width: 70%;
+  width: 1100px;
   margin:0 auto 90px;
   display: flex;
   flex-wrap: wrap;
@@ -269,11 +269,11 @@
 .table__heading_theme_dark {
   line-height: 1.15;
   font-size: 24px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .table__text_theme_dark {
-  margin: 20px auto 80px;
+  margin: 20px auto;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -335,7 +335,7 @@
   margin: 0 0 20px;
   line-height: 30px;
   font-size: 18px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .footer__column-links {
