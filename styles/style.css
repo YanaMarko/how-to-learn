@@ -10,11 +10,12 @@
 .header {
   min-height: 600px;
   max-height: 756px;
-  margin-bottom: 100px;
   height: 100vh;
   background-color: #f2f2f2;
   display: flex;
   position: relative;
+  top: 0px;
+  bottom: 100px;
   z-index: 1;
 }
 
@@ -26,14 +27,14 @@
   width: 183px;
   background-image: url(../images/logo_place_header.svg);
   position: absolute;
-  top:30px;
-  left:64px;
+  top: 30px;
+  left: 64px;
   z-index: 1;
 }
 
 .header__title {
+  margin: 0;
   width: 730px;
-  margin-left: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,19 +42,22 @@
   font-size: 102px;
   font-weight: bold;
   position: relative;
-  z-index: 1;
+  left: 64px;
+  z-index: 2;
 }
 
 .header__subtitle {
+  margin: 0;
   width: 388px;
-  margin-left: 64px;
-  margin-bottom: 30px;
-  margin-top: 650px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
   position: absolute;
-  z-index: 1;
+  right: 400px;
+  left: 64px;
+  bottom: 40px;
+  top: 630px;
+  z-index: 2;
 }
 
 .header__link {
@@ -70,7 +74,7 @@
   opacity: 0.6;
 }
 
-.header__main-illustrartion {
+.header__main-illustration {
   width: 765px;
   height: 608px;
   position: absolute;
@@ -84,22 +88,22 @@
   height: 568px;
   width: 568px;
   background-color: #2f80ed;
-  z-index: 0;
   position: absolute;
   right: 0;
+  z-index: 0;
 }
 
 /*Description*/
 
-.descriotion__two-columns {
+.two-columns {
   margin: 100px auto;
   width: 80%;
   display: flex;
   justify-content: space-between;
 }
 
-.description__two-columns_brief {
-  margin-top: 24px;
+.two-columns_brief {
+  margin: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -107,25 +111,25 @@
   width: 174px;
 }
 
-.description__two-columns_main-text {
+.two-columns_main-text {
   width: 80%;
 }
 
-.description__two-columns_paragraph {
+.two-columns_paragraph {
   min-width: 784px;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
 
-.description__two-columns_span-accent {
+.two-columns_span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
 }
 
-.digits__section_title {
+.section_title {
   width: 60%;
   margin: 100px auto 20px;
   text-align: center;
@@ -134,7 +138,7 @@
   font-weight: bold;
 }
 
-.digits__section_subtitle {
+.section_subtitle {
   width: 60%;
   margin: 0 auto 60px;
   text-align: center;
@@ -154,26 +158,20 @@
 }
 
 .table__cell {
-  width: 20%;
-  margin-right: 20px;
+  width: 250px;
 }
 
-.table__cell_heading {
-  text-align: center;
+.table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
 }
 
-.table__cell_text {
+.table_text {
   margin: 20px 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-}
-
-.table__small-text {
-  margin-top: 20px;
 }
 
 /*Feynman*/
@@ -189,35 +187,33 @@
 
 .feynman__title {
   width: 648px;
-  margin: 0 auto 70px;
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
-  position: relative;
-  top: 100px;
+  margin: 0 29% 70px;
+  padding-top: 100px;
   z-index: 1;
 }
 
 .feynman__subtitle {
+  margin: 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   text-align: center;
-  position: relative;
-  top: 70px;
   z-index: 1;
 }
 
 .feynman__link {
-  top: 50%;
-  right: 48px;
   text-decoration: none;
   color: #2f80ed;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   position: absolute;
+  top: 50%;
+  right: 48px;
 }
 
 /*Kaufman*/
@@ -231,32 +227,39 @@
 
 .section-title_theme_dark {
   width: 60%;
-  margin: 90px auto 20px;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
   text-align: center;
   position: relative;
+  top: 90px;
+  left: 20%;
+  bottom: 20;
+  margin: 0;
+  z-index: 2;
 }
 
 .section-subtitle_theme_dark {
+  margin: 0;
   width: 60%;
-  margin: 0 auto 80px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   text-align: center;
   position: relative;
+  top: 120px;
+  left: 20%;
+  bottom: 80px;
   z-index: 1;
 }
 
-.table__theme_dark {
+.table_theme_dark {
+  max-height: 900px;
   width: 1100px;
-  margin:0 auto 90px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  position: relative;
+  margin: 170px auto 100px;
   z-index: 2;
 }
 
@@ -264,6 +267,7 @@
   margin-right: 0;
   width: 200px;
   color: white;
+  z-index: 2;
 }
 
 .table__heading_theme_dark {
@@ -297,89 +301,84 @@
   min-height: 350px;
   color: white;
   background-color: #1f1f1f;
+  margin: 0 auto 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__columns {
   width: 90%;
-  margin: 0 auto 40px;
+  margin: 60px 5% 40px ;
   display: flex;
-  flex-basis: 711px;
+  justify-content: space-between;
 }
 
-.footer__column_content {
+.footer__column_content_copyring {
   display: flex;
+  flex-direction: column;
+  flex-basis: 711px;
   justify-content: space-between;
   flex-direction: column;
 }
 
-.logo__place_footer {
+.logo_place_footer {
   height: 35px;
   width: 184px;
   background-image: url(../images/logo_place_footer.svg);
 }
 
 .footer__author {
-  margin: 18px auto;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  margin: 18px 0;
 }
 
 .footer__column_content_info {
-  margin: 0 10% 0 50%;
-  display: flex;
-  flex-direction: column;
 }
 
 .footer__column-heading {
-  margin: 0 0 20px;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
+  margin: 0;
 }
 
 .footer__column-links {
-  margin-bottom: 20px;
   text-decoration: none;
   text-align: start;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   list-style-type: none;
-  margin-left: -37px;
-  padding-left: -37px;
+  padding-left: 0;
 }
 
 .footer__column-link {
-  margin-bottom: 5px;
   text-decoration: none;
   color: white;
 }
 
 .footer__column_content_social {
-  display: flex;
-  flex-direction: column;
 }
 
-.facebook__color_white::before {
-  margin-right: 10px;
+.footer__social-icon{
   width: 16px;
   height: 16px;
+}
+
+.footer__column-link_icon_fb::before {
   content: url(../images/facebook_color_white.svg);
+  margin-right: 10px;
 }
 
-.vk_color_white::before {
-  margin-right: 10px;
-  width: 16px;
-  height: 16px;
+.footer__column-link_icon_vk::before {
   content: url(../images/vk_color_white.svg);
-}
-
-.instagram_color_white::before {
   margin-right: 10px;
-  width: 16px;
-  height: 16px;
-  content: url(../images/instagram_color_white.svg);
 }
 
+.footer__column-link_icon_inst::before {
+  content: url(../images/instagram_color_white.svg);
+  margin-right: 10px;
+}
 
