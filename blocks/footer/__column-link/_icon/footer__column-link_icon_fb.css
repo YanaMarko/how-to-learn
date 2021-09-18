@@ -1,0 +1,4 @@
+.footer__column-link_icon_fb::before {
+  content: url(../../../../images/facebook_color_white.svg);
+  margin-right: 10px;
+}

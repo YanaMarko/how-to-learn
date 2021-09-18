@@ -3,5 +3,6 @@
   width: 515px;
   height: 316px;
   cursor: pointer;
+  border: none;
   z-index: 1;
 }

@@ -1,3 +1,7 @@
+@import url(../Vendor/normalize.css);
+
+@import url(../blocks/link/link.css);
+
 @import url(../blocks/cards/__description/cards__description.css);
 @import url(../blocks/cards/__image/cards__image.css);
 @import url(../blocks/cards/__item/cards__item.css);
@@ -11,11 +15,14 @@
 @import url(../blocks/feynman/__title/feynman__title.css);
 @import url(../blocks/feynman/feynman.css);
 
-@import url(../blocks/footer/__authour/footer__author.css);
-@import url(../blocks/footer/__column-heading/footer__column-heding.css);
+@import url(../blocks/footer/__author/footer__author.css);
+@import url(../blocks/footer/__column-heading/footer__column-heading.css);
 @import url(../blocks/footer/__column-link/footer__column-link.css);
+@import url(../blocks/footer/__column-link/_icon/footer__colimn-link_icon_inst.css);
+@import url(../blocks/footer/__column-link/_icon/footer__column-link_icon_fb.css);
+@import url(../blocks/footer/__column-link/_icon/footer__column-link_icon_vk.css);
 @import url(../blocks/footer/__column-links/footer__column-links.css);
-@import url(../blocks/footer/__column_content/footer__column_content_copyright.css);
+@import url(../blocks/footer/__column/_content/footer__column_content_copyright.css);
 @import url(../blocks/footer/__columns/footer__columns.css);
 @import url(../blocks/footer/__social-icon/footer__social-icon.css);
 @import url(../blocks/footer/footer.css);
